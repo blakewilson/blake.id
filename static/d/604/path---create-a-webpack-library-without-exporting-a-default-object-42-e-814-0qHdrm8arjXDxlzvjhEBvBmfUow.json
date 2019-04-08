@@ -1,1 +1,0 @@
-{"errors":[{"message":"Cannot query field \"description\" on type \"MarkdownRemarkFrontmatter\".","locations":[{"line":17,"column":7}]}],"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"/create-a-webpack-library-without-exporting-a-default-object/","previous":null,"next":null}}
