@@ -46,5 +46,3 @@ output: {
 This tells Webpack to export the library on the default export now, instead of exporting the whole namespace object.
 
 I hope someone can find this useful, since it took me hours to fix this one simple issue 🤦‍
-
-Cheers!
