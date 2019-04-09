@@ -1,6 +1,6 @@
 ---
 title: Create a Webpack Library Without Exporting a "default" Object
-date: "2019-04-07T15:00:00-0800"
+date: "2019-04-07T15:00:00-0700"
 description: ""
 ---
 
