@@ -5,13 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { graphql, StaticQuery } from 'gatsby'
+import Image from 'gatsby-image'
+import React from 'react'
 
-import { rhythm } from "../utils/typography"
-
-function Bio() {
+function Bio () {
   return (
     <StaticQuery
       query={bioQuery}
@@ -21,20 +19,20 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: `1rem`
             }}
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
-                marginRight: rhythm(1 / 2),
+                marginRight: `1rem`,
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
+                borderRadius: `100%`
               }}
               imgStyle={{
-                borderRadius: `50%`,
+                borderRadius: `50%`
               }}
             />
             <p>

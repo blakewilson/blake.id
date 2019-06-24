@@ -1,13 +1,11 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { graphql, Link } from 'gatsby'
+import React from 'react'
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 class BlogIndex extends React.Component {
-  render() {
+  render () {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
@@ -15,27 +13,50 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
+          title='All posts'
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
+        {/* <Bio /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div
+              style={{
+                marginBottom: '2rem'
+              }}
+              key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: `1rem`,
+                  fontFamily: [
+                    'SFMono-Regular',
+                    'Consolas',
+                    'Liberation Mono',
+                    'Menlo',
+                    'Courier',
+                    'monospace'
+                  ]
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none`, textDecoration: 'none', color: '#000' }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <h5 style={{
+                fontWeight: 'normal',
+                marginBottom: '1rem',
+                fontFamily: [
+                  'SFMono-Regular',
+                  'Consolas',
+                  'Liberation Mono',
+                  'Menlo',
+                  'Courier',
+                  'monospace'
+                ]
+              }}>{node.frontmatter.date}</h5>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.frontmatter.description || node.excerpt
                 }}
               />
             </div>
