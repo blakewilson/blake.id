@@ -9,46 +9,74 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
+    // if (location.pathname === rootPath) {
+    //   header = (
+    //     <h1
+    //       style={{
+    //         marginBottom: `3rem`,
+    //         marginTop: 0
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: `none`,
+    //           textDecoration: `none`,
+    //           color: `inherit`,
+    //           backgroundColor: '#000',
+    //           color: '#fff',
+    //           padding: '0.25rem .5rem'
+    //         }}
+    //         to={`/`}
+    //       >
+    //         {title}
+    //       </Link>
+    //     </h1>
+    //   )
+    // } else {
+    //   header = (
+    //     <h3
+    //       style={{
+    //         marginTop: 0
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: `none`,
+    //           textDecoration: `none`,
+    //           color: `inherit`
+    //         }}
+    //         to={`/`}
+    //       >
+    //         {title}
+    //       </Link>
+    //     </h3>
+    //   )
+    // }
+
+    header = (
+      <h1
+        style={{
+          marginBottom: `3rem`,
+          marginTop: 0,
+          textAlign: 'center'
+        }}
+      >
+        <Link
           style={{
-            marginBottom: `3rem`,
-            marginTop: 0
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
+            backgroundColor: '#000',
+            color: '#fff',
+            padding: '0.25rem .5rem'
           }}
+          to={`/`}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            marginTop: 0
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+          {title}
+        </Link>
+      </h1>
+    )
+
     return (
       <div
         style={{
