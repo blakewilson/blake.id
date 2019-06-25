@@ -7,7 +7,7 @@ description: ""
 I recently had the opportunity to build the new submission flow for [The Unsent Project](https://theunsentproject.com) by [Rora Blue](https://instagram.com/rorablue). 
 
 
-The Unsent Project is a collection of unsent text messages to first loves. Users can submit these messages on The Unsent Project website by filling out a name, the message, and selecting a color that you associate with your first love. Once submitted, it gets added to the Unsent Project Archive, a collection of over 40,000 submissions! [I recommend taking a look!](https://theunsentproject.com/archive)
+The Unsent Project is a collection of unsent text messages to first loves. Users can submit these messages on The Unsent Project website by filling out a name, the message, and selecting a color that you associate with your first love. Once submitted, it gets added to the Unsent Project Archive, a collection of over 40,000 submissions. [I recommend checking it out!](https://theunsentproject.com/archive)
 
 <span style="background-color: #000;"><img src="./blankunsent.png" /></span>
 <p class="caption">A blank Unsent Message</p>
@@ -53,7 +53,7 @@ This let me enqueue the compiled JS and CSS into WordPress by using `wp_enqueue_
 I am very happy with the final product. It is very responsive to user input, and works on mobile, which was a downfall of the previous iteration. Additionally, her users seem to enjoy it as well!
 
 <video loop controls autoplay>
-    <source src="./final-project.mov" type="video/mp4">
+    <source src="./final-project.mp4" type="video/mp4">
 </video>
 
 
