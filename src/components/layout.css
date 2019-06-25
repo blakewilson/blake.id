@@ -31,3 +31,17 @@ video {
     font-size: 0.9rem;
     font-style: italic;
 }
+
+.brand {
+    position: relative;
+}
+
+.brand:after {
+    content: "blake.id";
+    position: absolute;
+    padding: .25rem 0.5rem;
+    background-color: #ccc;
+    top: -.25rem;
+    left: .25rem;
+    color: #000;
+}

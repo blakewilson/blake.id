@@ -62,10 +62,10 @@ class Layout extends React.Component {
         }}
       >
         <Link
+          className='brand'
           style={{
             boxShadow: `none`,
             textDecoration: `none`,
-            color: `inherit`,
             backgroundColor: '#000',
             color: '#fff',
             padding: '0.25rem .5rem'
