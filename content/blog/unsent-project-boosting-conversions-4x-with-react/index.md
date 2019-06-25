@@ -52,7 +52,7 @@ This let me enqueue the compiled JS and CSS into WordPress by using `wp_enqueue_
 
 I am very happy with the final product. It is very responsive to user input, and works on mobile, which was a downfall of the previous iteration. Additionally, her users seem to enjoy it as well!
 
-<video loop controls autoplay>
+<video loop controls autoplay muted playsinline>
     <source src="./final-project.mp4" type="video/mp4">
 </video>
 
