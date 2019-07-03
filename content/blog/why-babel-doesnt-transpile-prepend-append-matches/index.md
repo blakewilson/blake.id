@@ -1,5 +1,5 @@
 ---
-title: Why Babel Doesn't Transpile .prepend(), .append(), .matches(), etc.
+title: Why Babel Doesn't Transpile prepend(), append(), matches(), etc.
 date: "2019-07-03T00:00:00-0700"
 description: ""
 ---
