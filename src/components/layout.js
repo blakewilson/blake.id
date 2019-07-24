@@ -56,7 +56,7 @@ class Layout extends React.Component {
     header = (
       <h1
         style={{
-          marginBottom: `3rem`,
+          marginBottom: `2rem`,
           marginTop: 0,
           textAlign: 'center'
         }}
@@ -87,6 +87,15 @@ class Layout extends React.Component {
         }}
       >
         <header>{header}</header>
+        <nav style={{
+          marginBottom: `2rem`
+        }}>
+          <ul>
+            <li><Link to={`/about`}>About</Link></li>
+            <li><Link to={`/uses`}>Uses</Link></li>
+            <li><a target='_blank' href='https://github.com/blakewilson'>GitHub</a></li>
+          </ul>
+        </nav>
         <main>{children}</main>
       </div>
     )
