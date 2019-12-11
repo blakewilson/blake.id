@@ -97,9 +97,6 @@ class Layout extends React.Component {
               <Link to={`/about`}>About</Link>
             </li>
             <li>
-              <Link to={`/uses`}>Uses</Link>
-            </li>
-            <li>
               <a target="_blank" href="https://github.com/blakewilson">
                 GitHub
               </a>
