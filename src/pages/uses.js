@@ -1,18 +1,16 @@
-import { graphql, Link } from 'gatsby'
-import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import { graphql, Link } from "gatsby"
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class Uses extends React.Component {
-  render () {
+  render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title='About'
-        />
+        <SEO title="About" />
         <h2>My Setup</h2>
         <ul>
           <li>13" MacBook Pro 2015</li>
@@ -27,17 +25,34 @@ class Uses extends React.Component {
 
         <h2>Software I Use</h2>
         <ul>
-          <li><strong>Spotify</strong> for music</li>
-          <li><strong>Sketch</strong> for design</li>
-          <li><strong>VS Code</strong> for coding</li>
-          <li><strong>Firefix</strong> for browsing</li>
-          <li><strong>MAMP</strong> for WordPress development</li>
-          <li><strong>Xcode</strong> for IOS and MacOS development</li>
-          <li><strong>Terminal</strong> for bash</li>
-          <li><strong>Postman</strong> for API testing</li>
-          <li><strong>GitHub Desktop</strong> for git</li>
+          <li>
+            <strong>Spotify</strong> for music
+          </li>
+          <li>
+            <strong>Sketch</strong> for design
+          </li>
+          <li>
+            <strong>VS Code</strong> for coding
+          </li>
+          <li>
+            <strong>Firefix</strong> for browsing
+          </li>
+          <li>
+            <strong>MAMP</strong> for WordPress development
+          </li>
+          <li>
+            <strong>Xcode</strong> for IOS and MacOS development
+          </li>
+          <li>
+            <strong>Terminal</strong> for bash
+          </li>
+          <li>
+            <strong>Postman</strong> for API testing
+          </li>
+          <li>
+            <strong>GitHub Desktop</strong> for git
+          </li>
         </ul>
-
       </Layout>
     )
   }
@@ -46,11 +61,11 @@ class Uses extends React.Component {
 export default Uses
 
 export const pageQuery = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-            }
-        }
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
+  }
 `

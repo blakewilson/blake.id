@@ -1,10 +1,10 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import './layout.css'
-import './prism.css'
+import { Link } from "gatsby"
+import React from "react"
+import "./layout.css"
+import "./prism.css"
 
 class Layout extends React.Component {
-  render () {
+  render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
@@ -58,17 +58,17 @@ class Layout extends React.Component {
         style={{
           marginBottom: `2rem`,
           marginTop: 0,
-          textAlign: 'center'
+          textAlign: "center",
         }}
       >
         <Link
-          className='brand'
+          className="brand"
           style={{
             boxShadow: `none`,
             textDecoration: `none`,
-            backgroundColor: '#000',
-            color: '#fff',
-            padding: '0.25rem .5rem'
+            backgroundColor: "#000",
+            color: "#fff",
+            padding: "0.25rem .5rem",
           }}
           to={`/`}
         >
@@ -83,17 +83,27 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: `840px`,
-          padding: `2rem`
+          padding: `2rem`,
         }}
       >
         <header>{header}</header>
-        <nav style={{
-          marginBottom: `2rem`
-        }}>
+        <nav
+          style={{
+            marginBottom: `2rem`,
+          }}
+        >
           <ul>
-            <li><Link to={`/about`}>About</Link></li>
-            <li><Link to={`/uses`}>Uses</Link></li>
-            <li><a target='_blank' href='https://github.com/blakewilson'>GitHub</a></li>
+            <li>
+              <Link to={`/about`}>About</Link>
+            </li>
+            <li>
+              <Link to={`/uses`}>Uses</Link>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/blakewilson">
+                GitHub
+              </a>
+            </li>
           </ul>
         </nav>
         <main>{children}</main>

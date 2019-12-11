@@ -1,11 +1,11 @@
-import { graphql, Link } from 'gatsby'
-import React from 'react'
-import Bio from '../components/bio'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import { graphql, Link } from "gatsby"
+import React from "react"
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class BlogPostTemplate extends React.Component {
-  render () {
+  render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
@@ -16,37 +16,41 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1 style={{
-          marginBottom: '1rem',
-          fontFamily: [
-            'SFMono-Regular',
-            'Consolas',
-            'Liberation Mono',
-            'Menlo',
-            'Courier',
-            'monospace'
-          ]
-        }}>{post.frontmatter.title}</h1>
+        <h1
+          style={{
+            marginBottom: "1rem",
+            fontFamily: [
+              "SFMono-Regular",
+              "Consolas",
+              "Liberation Mono",
+              "Menlo",
+              "Courier",
+              "monospace",
+            ],
+          }}
+        >
+          {post.frontmatter.title}
+        </h1>
         <p
           style={{
             display: `block`,
             marginBottom: `1rem`,
             marginTop: `1rem`,
-            fontWeight: 'normal',
+            fontWeight: "normal",
             fontFamily: [
-              'SFMono-Regular',
-              'Consolas',
-              'Liberation Mono',
-              'Menlo',
-              'Courier',
-              'monospace'
-            ]
+              "SFMono-Regular",
+              "Consolas",
+              "Liberation Mono",
+              "Menlo",
+              "Courier",
+              "monospace",
+            ],
           }}
         >
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        
+
         {/* <hr
           style={{
             marginBottom: `1rem`

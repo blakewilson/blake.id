@@ -1,11 +1,11 @@
-import { graphql, Link } from 'gatsby'
-import React from 'react'
-import Bio from '../components/bio'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import { graphql, Link } from "gatsby"
+import React from "react"
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class BlogIndex extends React.Component {
-  render () {
+  render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
@@ -13,8 +13,15 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title='Blog'
-          keywords={[`blog`, `javascript`, `react`, 'video background pro', 'video backgorund', 'sunday code']}
+          title="Blog"
+          keywords={[
+            `blog`,
+            `javascript`,
+            `react`,
+            "video background pro",
+            "video backgorund",
+            "sunday code",
+          ]}
         />
         {/* <Bio /> */}
         {posts.map(({ node }) => {
@@ -22,41 +29,53 @@ class BlogIndex extends React.Component {
           return (
             <div
               style={{
-                marginBottom: '2rem'
+                marginBottom: "2rem",
               }}
-              key={node.fields.slug}>
+              key={node.fields.slug}
+            >
               <h3
                 style={{
                   marginBottom: `1rem`,
                   fontFamily: [
-                    'SFMono-Regular',
-                    'Consolas',
-                    'Liberation Mono',
-                    'Menlo',
-                    'Courier',
-                    'monospace'
-                  ]
+                    "SFMono-Regular",
+                    "Consolas",
+                    "Liberation Mono",
+                    "Menlo",
+                    "Courier",
+                    "monospace",
+                  ],
                 }}
               >
-                <Link style={{ boxShadow: `none`, textDecoration: 'none', color: '#000' }} to={node.fields.slug}>
+                <Link
+                  style={{
+                    boxShadow: `none`,
+                    textDecoration: "none",
+                    color: "#000",
+                  }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
-              <h5 style={{
-                fontWeight: 'normal',
-                marginBottom: '1rem',
-                fontFamily: [
-                  'SFMono-Regular',
-                  'Consolas',
-                  'Liberation Mono',
-                  'Menlo',
-                  'Courier',
-                  'monospace'
-                ]
-              }}>{node.frontmatter.date}</h5>
+              <h5
+                style={{
+                  fontWeight: "normal",
+                  marginBottom: "1rem",
+                  fontFamily: [
+                    "SFMono-Regular",
+                    "Consolas",
+                    "Liberation Mono",
+                    "Menlo",
+                    "Courier",
+                    "monospace",
+                  ],
+                }}
+              >
+                {node.frontmatter.date}
+              </h5>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt
+                  __html: node.frontmatter.description || node.excerpt,
                 }}
               />
             </div>

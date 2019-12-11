@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import { graphql, StaticQuery } from 'gatsby'
-import Image from 'gatsby-image'
-import React from 'react'
+import { graphql, StaticQuery } from "gatsby"
+import Image from "gatsby-image"
+import React from "react"
 
-function Bio () {
+function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
@@ -19,7 +19,7 @@ function Bio () {
           <div
             style={{
               display: `flex`,
-              marginBottom: `1rem`
+              marginBottom: `1rem`,
             }}
           >
             <Image
@@ -29,14 +29,15 @@ function Bio () {
                 marginRight: `1rem`,
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`
+                borderRadius: `100%`,
               }}
               imgStyle={{
-                borderRadius: `50%`
+                borderRadius: `50%`,
               }}
             />
             <p>
-              Hi, I'm Blake! I'll be using this blog as a place to share my ideas and solutions in software development.
+              Hi, I'm Blake! I'll be using this blog as a place to share my
+              ideas and solutions in software development.
             </p>
           </div>
         )
