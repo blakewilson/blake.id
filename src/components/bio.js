@@ -11,18 +11,9 @@ function Bio() {
             <div className="intro">
               <h1>Blake Wilson</h1>
 
-              <p>
-                Hi, I'm Blake. I am a software engineer who enjoys building
-                products.
-              </p>
+              <p>Hi there, I'm Blake! I am a software engineer who enjoys building products. I'm using this blog to write about things that I either find interesting, or would like to reference in the future.</p>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                lorem quam, euismod ut lacus a, feugiat fringilla neque. Sed sed
-                commodo lorem. Vestibulum facilisis bibendum bibendum. Ut
-                sollicitudin mi id elementum ullamcorper. Morbi non elit
-                imperdiet justo auctor porttitor
-              </p>
+              <p>If you have any questions or care to get in touch, you can contact me <a href="mailto:blake@blake.id">here.</a></p>
             </div>
           )
         }}
