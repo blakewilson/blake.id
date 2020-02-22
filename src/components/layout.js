@@ -8,7 +8,7 @@ class Layout extends React.Component {
     return (
       <main>
         {children}
-        <style jsx="true" global="true">{`
+        <style jsx global>{`
           html {
             box-sizing: border-box;
           }
@@ -47,32 +47,7 @@ class Layout extends React.Component {
           a {
             color: inherit;
             text-decoration: none;
-            position: relative;
-            display: inline-block;
-          }
-
-          a:before {
-            content: "";
-            width: 100%;
-            height: 3px;
-            background-color: hsla(15, 89%, 90%, 1);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            transition: height 0.2s ease-in-out,
-              background-color 0.2s ease-in-out;
-          }
-
-          @media (prefers-color-scheme: dark) {
-            a:before {
-              background-color: hsl(15, 89%, 65%);
-            }
-          }
-
-          a:hover:before {
-            height: 100%;
-            background-color: hsl(15, 89%, 65%);
+            border-bottom: 3px solid hsl(15, 89%, 65%);
           }
 
           video,
@@ -84,15 +59,28 @@ class Layout extends React.Component {
             text-align: center;
             font-style: italic;
           }
-        `}</style>
 
-        <style jsx="true">{`
           main {
-            // max-width: 48rem;
-            max-width: 38rem;
+            max-width: 40rem;
             margin-left: auto;
             margin-right: auto;
             margin-top: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+
+          @media(max-width: 720px) {
+            h1 {
+              font-size: 1.3rem;
+            }
+            
+            h2 {
+              font-size: 1.2rem;
+            }
+
+            h3 {
+              font-size: 1.1rem;
+            }
           }
         `}</style>
       </main>

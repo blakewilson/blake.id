@@ -6,7 +6,7 @@ const BlogPostItem = props => {
   return (
     <div>
       <h3>
-        <Link to={slug}>{title}</Link>
+        <Link className="post-link" to={slug}>{title}</Link>
       </h3>
       <h5>{date}</h5>
 

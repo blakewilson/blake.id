@@ -18,7 +18,7 @@ function Bio() {
           )
         }}
       />
-      <style jsx="true">{`
+      <style>{`
         .intro {
           // display: flex;
         }

@@ -40,7 +40,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul> */}
         </div>
-        <style jsx="true">{`
+        <style>{`
           .article-container {
             max-width: 38rem;
             margin-left: auto;
@@ -69,10 +69,7 @@ class BlogPostTemplate extends React.Component {
             display: block;
             font-weight: bold;
             font-size: 1.5rem;
-          }
-
-          .back-home:before {
-            content: normal;
+            border-bottom: 0;
           }
         `}</style>
       </Layout>
