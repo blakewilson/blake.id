@@ -1,110 +1,101 @@
-import { Link } from "gatsby"
 import React from "react"
-import "./layout.css"
 import "./prism.css"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    // if (location.pathname === rootPath) {
-    //   header = (
-    //     <h1
-    //       style={{
-    //         marginBottom: `3rem`,
-    //         marginTop: 0
-    //       }}
-    //     >
-    //       <Link
-    //         style={{
-    //           boxShadow: `none`,
-    //           textDecoration: `none`,
-    //           color: `inherit`,
-    //           backgroundColor: '#000',
-    //           color: '#fff',
-    //           padding: '0.25rem .5rem'
-    //         }}
-    //         to={`/`}
-    //       >
-    //         {title}
-    //       </Link>
-    //     </h1>
-    //   )
-    // } else {
-    //   header = (
-    //     <h3
-    //       style={{
-    //         marginTop: 0
-    //       }}
-    //     >
-    //       <Link
-    //         style={{
-    //           boxShadow: `none`,
-    //           textDecoration: `none`,
-    //           color: `inherit`
-    //         }}
-    //         to={`/`}
-    //       >
-    //         {title}
-    //       </Link>
-    //     </h3>
-    //   )
-    // }
-
-    header = (
-      <h1
-        style={{
-          marginBottom: `2rem`,
-          marginTop: 0,
-          textAlign: "center",
-        }}
-      >
-        <Link
-          className="brand"
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            backgroundColor: "#000",
-            color: "#fff",
-            padding: "0.25rem .5rem",
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
+    const { children } = this.props
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: `840px`,
-          padding: `2rem`,
-        }}
-      >
-        <header>{header}</header>
-        <nav
-          style={{
-            marginBottom: `2rem`,
-          }}
-        >
-          <ul>
-            <li>
-              <Link to={`/about`}>About</Link>
-            </li>
-            <li>
-              <a target="_blank" href="https://github.com/blakewilson">
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <main>{children}</main>
-      </div>
+      <main>
+        {children}
+        <style jsx="true" global="true">{`
+          html {
+            box-sizing: border-box;
+          }
+
+          *,
+          *:before,
+          *:after {
+            box-sizing: inherit;
+          }
+
+          * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+
+          html {
+            font-size: 20px;
+          }
+
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+              Helvetica, Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            letter-spacing: -0.9px;
+            margin: 0;
+          }
+
+          @media (prefers-color-scheme: dark) {
+            body {
+              color: #fff;
+              background-color: hsla(0, 0%, 5%, 1);
+            }
+          }
+
+          a {
+            color: inherit;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+          }
+
+          a:before {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: hsla(15, 89%, 90%, 1);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transition: height 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
+          }
+
+          @media (prefers-color-scheme: dark) {
+            a:before {
+              background-color: hsl(15, 89%, 65%);
+            }
+          }
+
+          a:hover:before {
+            height: 100%;
+            background-color: hsl(15, 89%, 65%);
+          }
+
+          video,
+          img {
+            max-width: 100%;
+          }
+
+          p.caption {
+            text-align: center;
+            font-style: italic;
+          }
+        `}</style>
+
+        <style jsx="true">{`
+          main {
+            // max-width: 48rem;
+            max-width: 38rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+          }
+        `}</style>
+      </main>
     )
   }
 }

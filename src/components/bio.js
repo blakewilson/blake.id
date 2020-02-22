@@ -1,48 +1,56 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import { graphql, StaticQuery } from "gatsby"
-import Image from "gatsby-image"
 import React from "react"
 
 function Bio() {
   return (
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: `1rem`,
-            }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: `1rem`,
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              Hi, I'm Blake! I'll be using this blog as a place to share my
-              ideas and solutions in software development.
-            </p>
-          </div>
-        )
-      }}
-    />
+    <>
+      <StaticQuery
+        query={bioQuery}
+        render={data => {
+          return (
+            <div className="intro">
+              <h1>Blake Wilson</h1>
+
+              <p>
+                Hi, I'm Blake. I am a software engineer who enjoys building
+                products.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                lorem quam, euismod ut lacus a, feugiat fringilla neque. Sed sed
+                commodo lorem. Vestibulum facilisis bibendum bibendum. Ut
+                sollicitudin mi id elementum ullamcorper. Morbi non elit
+                imperdiet justo auctor porttitor
+              </p>
+            </div>
+          )
+        }}
+      />
+      <style jsx="true">{`
+        .intro {
+          // display: flex;
+        }
+
+        .intro h1 {
+          margin-top: 0;
+          line-height: 1;
+        }
+
+        .content {
+          width: calc(75% - 1rem);
+          margin-right: 1rem;
+        }
+
+        .media {
+          width: 25%;
+        }
+
+        video {
+          border-radius: 20px;
+        }
+      `}</style>
+    </>
   )
 }
 

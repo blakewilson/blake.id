@@ -1,8 +1,9 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BlogPostItem from "../components/blogPostListItem"
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,73 +13,22 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="Blog"
-          keywords={[
-            `blog`,
-            `javascript`,
-            `react`,
-            "video background pro",
-            "video backgorund",
-            "sunday code",
-          ]}
-        />
-        {/* <Bio /> */}
+        <SEO title="Blog" />
+
+        <Bio />
+
+        <h2>Posts</h2>
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+
           return (
-            <div
-              style={{
-                marginBottom: "2rem",
-              }}
+            <BlogPostItem
               key={node.fields.slug}
-            >
-              <h3
-                style={{
-                  marginBottom: `1rem`,
-                  fontFamily: [
-                    "SFMono-Regular",
-                    "Consolas",
-                    "Liberation Mono",
-                    "Menlo",
-                    "Courier",
-                    "monospace",
-                  ],
-                }}
-              >
-                <Link
-                  style={{
-                    boxShadow: `none`,
-                    textDecoration: "none",
-                    color: "#000",
-                  }}
-                  to={node.fields.slug}
-                >
-                  {title}
-                </Link>
-              </h3>
-              <h5
-                style={{
-                  fontWeight: "normal",
-                  marginBottom: "1rem",
-                  fontFamily: [
-                    "SFMono-Regular",
-                    "Consolas",
-                    "Liberation Mono",
-                    "Menlo",
-                    "Courier",
-                    "monospace",
-                  ],
-                }}
-              >
-                {node.frontmatter.date}
-              </h5>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
+              title={title}
+              slug={node.fields.slug}
+              date={node.frontmatter.date}
+            />
           )
         })}
       </Layout>
