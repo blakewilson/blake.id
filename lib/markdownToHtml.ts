@@ -12,9 +12,5 @@ export default async function markdownToHtml(markdown: string) {
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown);
 
-  console.log(result);
-
   return result.toString();
-  // const result = await remark().use(html).process(markdown);
-  // return result.toString();
 }
