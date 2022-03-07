@@ -1,21 +1,31 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/header";
+import profilePic from "../public/profile-pic.png";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Blake Wilson - Software Engineer and Creator</title>
+        <meta
+          name="description"
+          content="Hey I'm Blake! I'm a software engineer and creator, building things for the web."
+        />
+      </Head>
       <Header />
 
       <div className="container max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center">
           <div className="w-full md:w-1/2 p-4">
             <Image
-              className="rounded-lg"
-              src="/profile-pic.png"
+              src={profilePic}
               width={2607}
               height={3463}
+              placeholder="blur"
               layout="responsive"
+              className="rounded-lg"
             />
           </div>
           <div className="w-full md:w-1/2 p-4 prose prose-lg md:prose-2xl dark:prose-invert">

@@ -1,16 +1,17 @@
 import { Params } from "next/dist/server/router";
+import Head from "next/head";
 import FormatDate from "../components/format-date";
 import Header from "../components/header";
 import PostContent from "../components/postContent";
 import { getAllPosts, getPostBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
 
-type Author = {
+export type Author = {
   name: string;
   picture: string;
 };
 
-type PostType = {
+export type PostType = {
   slug: string;
   title: string;
   date: string;
@@ -32,6 +33,12 @@ type Props = {
 export default function Post({ post, morePosts }: Props) {
   return (
     <>
+      <Head>
+        <title>
+          {post.title} | Blake Wilson - Software Engineer and Creator
+        </title>
+        <meta name="description" content={post.content} />
+      </Head>
       <Header />
 
       <main className="container max-w-6xl mx-auto p-4">

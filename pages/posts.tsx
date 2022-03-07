@@ -1,11 +1,16 @@
+import Head from "next/head";
 import Link from "next/link";
 import FormatDate from "../components/format-date";
 import Header from "../components/header";
 import { getAllPosts } from "../lib/api";
+import { PostType } from "./[slug]";
 
-export default function Home({ allPosts }) {
+export default function Home({ allPosts }: { allPosts: PostType[] }) {
   return (
     <>
+      <Head>
+        <title>Posts | Blake Wilson - Software Engineer and Creator</title>
+      </Head>
       <Header />
 
       <div className="container max-w-6xl mx-auto p-4">
