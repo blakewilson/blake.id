@@ -1,7 +1,6 @@
 ---
 title: "React Global State in 5 Minutes with Hooks (useContext, useReducer)"
 date: "2020-01-21T15:00:00-0700"
-description: ""
 ---
 
 React is fantastic for state management. UI & UX can be exponentially improved in terms of design and functionality thanks to React. With hooks, creating state local to components becomes even easier using `useState`. However, there are times when you need global state throughout your React app where Higher Order Components (HOC) just won't cut it.
@@ -25,25 +24,23 @@ In this example, we'll be creating a simple todos app, where the todos will be s
 Let's start by setting up our global store, create a file called `store.js` and populate it with the following code:
 
 ```js
-import React, {createContext, useReducer} from 'react'
-import Reducer from './reducer'
+import React, { createContext, useReducer } from "react";
+import Reducer from "./reducer";
 
 const initialState = {
-    todos: [],
-    todoInput: ''
-}
+  todos: [],
+  todoInput: "",
+};
 
-const Store = ({children}) => {
-    const [state, dispatch] = useReducer(Reducer, initialState)
-    return (
-        <Context.Provider value={[state, dispatch]}>
-            {children}
-        </Context.Provider>
-    )
-}
+const Store = ({ children }) => {
+  const [state, dispatch] = useReducer(Reducer, initialState);
+  return (
+    <Context.Provider value={[state, dispatch]}>{children}</Context.Provider>
+  );
+};
 
-export const Context = createContext(initialState)
-export default Store
+export const Context = createContext(initialState);
+export default Store;
 ```
 
 We are doing a few things in this file. First, we set the `initialState`, pretty self explanatory. We are creating and exporting a `<Store>` component, this will be used in the next step. Finally, we are creating and exporting the `Context` variable. This will be used to get the global state in our components.
@@ -53,7 +50,7 @@ We are doing a few things in this file. First, we set the `initialState`, pretty
 In the last example, we created a `<Store>` component. This component wraps around the entire application to make the global state available to all components within the application. Go to your React entrypoint file, where the `ReactDOM.render()` function is being called. It should look something like this:
 
 ```js
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 Simply import `Store`, and wrap the `<Store>` component around the `<App>` component:
@@ -72,28 +69,28 @@ Next, we need to create our `reducer.js` file. If you are unfamiliar with what a
 
 ```js
 const Reducer = (state, action) => {
-    switch (action.type) {
-        case 'SET_TODOS':
-            return {
-                ...state,
-                todos: action.payload
-            }
-        case 'ADD_TODO':
-            return {
-                ...state,
-                todos: [...state.todos, action.payload]
-            }
-        case 'SET_TODO_INPUT':
-            return {
-                ...state,
-                todoInput: action.payload
-            }
-        default:
-            return state
-    }
-}
+  switch (action.type) {
+    case "SET_TODOS":
+      return {
+        ...state,
+        todos: action.payload,
+      };
+    case "ADD_TODO":
+      return {
+        ...state,
+        todos: [...state.todos, action.payload],
+      };
+    case "SET_TODO_INPUT":
+      return {
+        ...state,
+        todoInput: action.payload,
+      };
+    default:
+      return state;
+  }
+};
 
-export default Reducer
+export default Reducer;
 ```
 
 This code creates three reducers: `SET_TODOS`, `SET_TODO`, and `SET_TODO_INPUT`. Traditionally, reducers are all uppercase strings in [snake case](https://en.wikipedia.org/wiki/Snake_case).
@@ -109,44 +106,44 @@ With the store and reducers in place, we can now use and update our global state
 Start by importing `useContext` in your component:
 
 ```js
-import React, {useContext} from 'react'
+import React, { useContext } from "react";
 ```
 
 You'll also need to import your `Context`, the variable we created in the `store.js` file:
 
 ```js
-import { Context } from './store'
+import { Context } from "./store";
 ```
 
 Now, within your component, create the `state` and `dispatch` method:
 
 ```js
-const [state, dispatch] = useContext(Context)
+const [state, dispatch] = useContext(Context);
 ```
 
 Great, you're all set! Let's grab some of our state, say our `todos`:
 
 ```js
 // This will return the todos array from your state
-console.log(state.todos)
+console.log(state.todos);
 ```
 
 If you wanted to update the entire state of the `todos` array, you could use the `SET_TODOS` reducer:
 
 ```js
 dispatch({
-    type: 'SET_TODOS', // The name of the reducer
-    payload: ['Go to the gym', 'Cook dinner'] // The new state of the reducer
-})
+  type: "SET_TODOS", // The name of the reducer
+  payload: ["Go to the gym", "Cook dinner"], // The new state of the reducer
+});
 ```
 
 Or, perhaps you just wanted to add a new todo to the existing list:
 
 ```js
 dispatch({
-    type: 'ADD_TODO', // The name of the reducer
-    payload: 'Some new todo item' // Notice in this reducer, the string is appended to the todos array
-})
+  type: "ADD_TODO", // The name of the reducer
+  payload: "Some new todo item", // Notice in this reducer, the string is appended to the todos array
+});
 ```
 
 The new state depends entirely on how the reducer's return statement is formatted. This is perfect for tasks like adding, subtracting, counting, etc.
@@ -154,4 +151,3 @@ The new state depends entirely on how the reducer's return statement is formatte
 ## Wrapping Up
 
 Gone are the days of setting up Redux and all of its config for global state. With the addition of React Hooks, it's now entirely native, and a breeze to setup 💨
-

@@ -1,12 +1,11 @@
 ---
 title: "Year In Review: 2019"
 date: "2019-12-31T15:00:00-0700"
-description: ""
 ---
 
 2019 was a great year. It was filled with a lot of learning, new endeavours, and good times. Here is a small recap of some of the accomplishments and notable events that came up throughout the year in chronological order.
 
-### 2018-2019 Ski Season 
+### 2018-2019 Ski Season
 
 Throughout the 2018-2019 snow season, I snowboarded 165,000 vertical feet at [Northstar Tahoe](https://www.northstarcalifornia.com/) and [Heavenly Tahoe](https://www.skiheavenly.com/) thanks to my [Epic Pass](https://www.epicpass.com/).
 

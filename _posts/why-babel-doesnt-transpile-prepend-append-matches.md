@@ -1,10 +1,9 @@
 ---
 title: Why Babel Doesn't Transpile prepend(), append(), matches(), etc.
 date: "2019-07-03T00:00:00-0700"
-description: ""
 ---
 
-[Babel](https://babeljs.io/) is an [EMCAScript](https://en.wikipedia.org/wiki/ECMAScript) transpiler that can be used to input modern JavaScript and export JavaScript that is backwards compatible for older browsers. This works really well, however, I noticed recently that a few methods didn't transpile when testing for Internet Explorer 11. In specific, I noticed `prepend()`, `append()`, and `matches()` were not transpiling. 
+[Babel](https://babeljs.io/) is an [EMCAScript](https://en.wikipedia.org/wiki/ECMAScript) transpiler that can be used to input modern JavaScript and export JavaScript that is backwards compatible for older browsers. This works really well, however, I noticed recently that a few methods didn't transpile when testing for Internet Explorer 11. In specific, I noticed `prepend()`, `append()`, and `matches()` were not transpiling.
 
 After looking into this further, I found that these methods in particular are what are known as [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API). These are not actually apart of the ECMAScript spec, therefore Babel will not transpile them. To determine if a method is a Web API, I like to take a look at the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) under "Specification." There you'll find if it is apart of the DOM (Web API), or if it is apart of ECMAScript.
 

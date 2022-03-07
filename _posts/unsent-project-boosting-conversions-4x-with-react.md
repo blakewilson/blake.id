@@ -1,15 +1,14 @@
 ---
-title: 'The Unsent Project: Boosting Conversions 4x With React'
+title: "The Unsent Project: Boosting Conversions 4x With React"
 date: "2019-06-23T15:00:00-0700"
-description: ""
 ---
 
-I recently had the opportunity to build the new submission flow for [The Unsent Project](https://theunsentproject.com) by [Rora Blue](https://instagram.com/rorablue). 
-
+I recently had the opportunity to build the new submission flow for [The Unsent Project](https://theunsentproject.com) by [Rora Blue](https://instagram.com/rorablue).
 
 The Unsent Project is a collection of unsent text messages to first loves. Users can submit these messages on The Unsent Project website by filling out a name, the message, and selecting a color that you associate with your first love. Once submitted, it gets added to the Unsent Project Archive, a collection of over 40,000 submissions. [I recommend checking it out!](https://theunsentproject.com/archive)
 
 <span style="background-color: #000;"><img src="./blankunsent.png" /></span>
+
 <p class="caption">A blank Unsent Message</p>
 
 ### Technical Workflow Before Redesign
@@ -36,9 +35,9 @@ This allowed me to create an HTML canvas from the HTML generated from React. The
 
 Once the information is sent to WordPress, the data would hit an endpoint that would create a new WordPress post, as well as convert the Data URL to a png image server side to be saved into WordPress media as a featured image.
 
-Finally, I used [Create React App](https://github.com/facebook/create-react-app) in the development process, but since it was such a simple app, I did not need the entire CRA. Instead, I used a package called [`nwb`](https://github.com/insin/nwb) to export just a single component. 
+Finally, I used [Create React App](https://github.com/facebook/create-react-app) in the development process, but since it was such a simple app, I did not need the entire CRA. Instead, I used a package called [`nwb`](https://github.com/insin/nwb) to export just a single component.
 
-After running the following code, I got a bundle of JS and CSS to run the component stand alone. 
+After running the following code, I got a bundle of JS and CSS to run the component stand alone.
 
 ```bash
 cd my-app/componentDir
@@ -56,11 +55,6 @@ I am very happy with the final product. It is very responsive to user input, and
     <source src="./final-project.mp4" type="video/mp4">
 </video>
 
-
 Most importantly, the conversion rate has jumped drastically. Prior to the redesign, The Unsent Project would average 500 submissions a month. The monthly average amount of submissions post-redesign are now 2,000 submissions; a 4x increase! There have been over 7,000 submissions since the redesign, bringing total submissions to over 40,000!
 
 View [Rora Blue's Instagram](https://instagram.com/rorablue) and [The Unsent Project](https://theunsentproject.com).
-
-
-
-

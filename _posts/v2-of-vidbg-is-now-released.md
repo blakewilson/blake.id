@@ -1,7 +1,6 @@
 ---
 title: Version 2 of vidbg.js Has Been Released
 date: "2019-04-08T22:00:00-0700"
-description: ""
 ---
 
 Today, I finished [vidbg.js](https://github.com/blakewilson/vidbg) version 2 and merged it into the master git repo.

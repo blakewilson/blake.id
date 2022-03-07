@@ -1,7 +1,6 @@
 ---
 title: Create a Webpack Library Without Exporting a "default" Object
 date: "2019-04-07T15:00:00-0700"
-description: ""
 ---
 
 I recently finished building [version 2 of vidbg.js, a minimal JavaScript video background plugin.](https://github.com/blakewilson/vidbg) I use Babel and Webpack to be able to write the newest JavaScript, while making it backwards compatible for older browsers that I need to support.

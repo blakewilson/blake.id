@@ -1,7 +1,6 @@
 ---
 title: Video Background Pro 4 has Been Released
 date: "2019-06-24T15:00:00-0700"
-description: ""
 ---
 
 After about a year of development, [Video Background Pro 4](https://pushlabs.co) has been released! This update has been a long time in the making and I am excited to finally release it!
@@ -52,17 +51,16 @@ The `player_options` parameter accepts a JSON string, and must be surrounded by 
 Notice the single quotes around the `player_options` value.
 
 Depending on the video background type, you can use any of these API parameters:
-* [HTML5 video attributes](https://www.w3schools.com/tags/tag_video.asp)
-* [YouTube API Parameters](https://developers.google.com/youtube/player_parameters#Parameters)
-* [Vimeo API Parameters](https://github.com/vimeo/player.js/#embed-options)
+
+- [HTML5 video attributes](https://www.w3schools.com/tags/tag_video.asp)
+- [YouTube API Parameters](https://developers.google.com/youtube/player_parameters#Parameters)
+- [Vimeo API Parameters](https://github.com/vimeo/player.js/#embed-options)
 
 Please keep in mind that using any of these parameters can certainly disable your video background if you are not careful. It is recommended that you have a good understanding of JavaScript before you use this shortcode parameter in production.
-
 
 ### Reposition Your Frontend Buttons
 
 You can now reposition your frontend play/volume buttons. You can do this by specifying the `frontend_container` parameter in the shortcode with a value of a JavaScript selector just like the container field. This will be super useful for those one-off themes that may reposition the frontend buttons in an undesirable location.
-
 
 ### Moving Forward
 

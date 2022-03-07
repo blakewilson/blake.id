@@ -1,7 +1,6 @@
 ---
 title: The Replacement of Icons for Illustrations in 2019
 date: "2019-07-11T15:00:00-0700"
-description: ""
 ---
 
 I have noticed a trend recently going on in web design where we are no longer using standard library icons like [FontAwesome](https://fontawesome.com) to show off product features on landing pages, promo material, etc. Instead, I've noticed the rise of illustrations using a variety of pastel colors, dark borders, and uneven coloring outside the lines like a rushed art project in school that was done an hour before it was due.

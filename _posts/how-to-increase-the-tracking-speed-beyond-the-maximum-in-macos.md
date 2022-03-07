@@ -1,7 +1,6 @@
 ---
 title: How to Increase the Tracking Speed Beyond the Maximum in MacOS
 date: "2019-10-25T15:00:00-0700"
-description: ""
 ---
 
 In MacOS, the maximum tracking speed for the mouse can still be pretty slow. Thankfully there is a terminal command you can run to increase it.

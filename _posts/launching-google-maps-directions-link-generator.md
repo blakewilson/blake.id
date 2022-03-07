@@ -1,7 +1,6 @@
 ---
 title: Launching Google Maps Directions Link Generator
 date: "2019-10-27T15:00:00-0700"
-description: ""
 ---
 
 Today, I launched Google Maps Directions Link Generator, a small web app that will generate you a "get directions" link to your company in Google Maps. I found that Google provides no simple way to get a link like this, so I decided to whip up this simple web app!

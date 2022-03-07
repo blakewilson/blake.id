@@ -1,7 +1,6 @@
 ---
 title: I Just Launched v1.0 of My Rental Cash Flow Calculator App
 date: "2019-08-30T15:00:00-0700"
-description: ""
 ---
 
 Yesterday I released my new [Rental Cash Flow Calculator Web App](https://rentalcashflow.app). This was a fun project that will generate a cash flow analysis and an amortization table for rental properties to determine if they are a good purchase or not.
