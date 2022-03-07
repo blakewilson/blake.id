@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { BsGithub, BsStackOverflow } from "react-icons/bs/";
+import { BsGithub } from "react-icons/bs/";
+import { FaNpm } from "react-icons/fa";
 
 export default function Header() {
   return (
     <header className="mb-8">
-      <div className="w-full max-w-6xl p-4 mx-auto flex items-center justify-between">
+      <div className="w-full max-w-6xl p-4 mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between">
         <Link href="/">
-          <a className="">
+          <a className="mb-6 sm:mb-0">
             <div className="text-3xl font-bold">Blake Wilson</div>
             <div className="text-md">Software Engineer</div>
           </a>
@@ -20,15 +21,27 @@ export default function Header() {
           </li>
           <li className="mr-6">
             <a
-              target="_blank"
-              href="https://stackoverflow.com/users/11711383/sundaycode"
+              href="mailto:blake@blake.id"
+              className="text-lg text-black dark:text-white"
             >
-              <BsStackOverflow className="text-3xl" />
+              Contact
+            </a>
+          </li>
+          <span className="hidden sm:block mr-6 border-l border-black dark:border-white h-6" />
+          <li className="mr-6">
+            <a target="_blank" href="https://www.npmjs.com/~blakewilson">
+              <span className="sm:sr-only text-lg text-black dark:text-white">
+                NPM
+              </span>
+              <FaNpm className="hidden sm:block text-3xl" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://github.com/blakewilson">
-              <BsGithub className="text-3xl" />
+              <span className="sm:sr-only text-lg text-black dark:text-white">
+                GitHub
+              </span>
+              <BsGithub className="hidden sm:block text-3xl" />
             </a>
           </li>
         </ul>
