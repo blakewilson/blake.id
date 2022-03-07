@@ -31,13 +31,11 @@ type Props = {
 export default function Post({ post, morePosts }: Props) {
   return (
     <>
-      <Head>
-        <SEO
-          title={`${post.title} | Blake Wilson - Software Engineer and Creator`}
-          description={post.content}
-          imageUrl={post?.coverImage}
-        />
-      </Head>
+      <SEO
+        title={`${post.title} | Blake Wilson - Software Engineer and Creator`}
+        description={post.content}
+        imageUrl={post?.coverImage}
+      />
       <Header />
 
       <main className="container max-w-6xl mx-auto p-4">

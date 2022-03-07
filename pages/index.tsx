@@ -8,12 +8,10 @@ import profilePic from "../public/profile-pic.png";
 export default function Home() {
   return (
     <>
-      <Head>
-        <SEO
-          title="Blake Wilson - Software Engineer and Creator"
-          description="Hey I'm Blake! I'm a software engineer and creator, building things for the web."
-        />
-      </Head>
+      <SEO
+        title="Blake Wilson - Software Engineer and Creator"
+        description="Hey I'm Blake! I'm a software engineer and creator, building things for the web."
+      />
       <Header />
 
       <div className="container max-w-6xl mx-auto">

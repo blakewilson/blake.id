@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export interface SEOProps {
   title: string;
   description?: string;
@@ -5,7 +7,7 @@ export interface SEOProps {
 }
 export default function SEO({ title, description, imageUrl }: SEOProps) {
   return (
-    <>
+    <Head>
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta property="og:title" content={title} />
@@ -31,6 +33,6 @@ export default function SEO({ title, description, imageUrl }: SEOProps) {
 
       {/* <meta property="og:url" content={url} />
       <meta property="twitter:url" content={url} /> */}
-    </>
+    </Head>
   );
 }
