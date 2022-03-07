@@ -5,11 +5,10 @@ export interface DateProps {
 }
 
 export default function FormatDate({ date }: PropsWithChildren<DateProps>) {
-  const dateString = new Date(date)
-    .toDateString()
-    .split(" ")
-    .slice(1)
-    .join(" ");
+  let _date: string | string[] = new Date(date).toDateString().split(" ");
+  _date = _date.slice(1);
+  _date[1] = `${_date[1]},`;
+  _date = _date.join(" ");
 
-  return <>{dateString}</>;
+  return <>{_date}</>;
 }

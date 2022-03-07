@@ -11,17 +11,27 @@ You can [view the release on Product Hunt here](https://www.producthunt.com/post
 
 Here are a few images below:
 
-<img src="./rcf-1.png" />
-<p class="caption">The main page when no data has been entered</p>
+<figure>
+    <img src="./rcf-1.png" />
+    <figcaption>The main page when no data has been entered</figcaption>
+</figure>
 
-<img src="./rcf-2.png" />
-<p class="caption">The main page once data has been entered about the property</p>
+<figure>
+    <img src="./rcf-2.png" />
+    <figcaption>The main page once data has been entered about the property</figcaption>
+</figure>
 
-<img src="./rcf-3.png" />
-<p class="caption">The amortization for the property</p>
+<figure>
+    <img src="./rcf-3.png" />
+    <figcaption>The amortization for the property</figcaption>
+</figure>
 
-<img src="./rcf-4.png" />
-<p class="caption">A demonstration of the Progressive Web App on iPhone</p>
+<figure>
+    <img src="./rcf-4.png" />
+    <figcaption>A demonstration of the Progressive Web App on iPhone</figcaption>
+</figure>
 
-<img src="./rcf-5.png" />
-<p class="caption">Banner that was used for Product Hunt</p>
+<figure>
+    <img src="./rcf-5.png" />
+    <figcaption>Banner that was used for Product Hunt</figcaption>
+</figure>

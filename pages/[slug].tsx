@@ -38,7 +38,7 @@ export default function Post({ post, morePosts }: Props) {
         <PostContent>
           <h1>{post.title}</h1>
 
-          <div className="pb-12">
+          <div className="pb-6">
             {post.date && (
               <>
                 Created on <FormatDate date={post.date} />

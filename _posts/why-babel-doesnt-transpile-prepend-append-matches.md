@@ -9,12 +9,16 @@ After looking into this further, I found that these methods in particular are wh
 
 For example, if you look up `map()` on MDN, you'll see under "specifications" that it is apart of ECMAScript, therefore it will be transpiled by Babel.
 
-<img src="./map_ecma_spec.png" />
-<p class="caption">map() is apart of the ECMAScript spec, therefore it will be transpiled by Babel.</p>
+<figure>
+    <img src="./map_ecma_spec.png" />
+    <figcaption>map() is apart of the ECMAScript spec, therefore it will be transpiled by Babel.</figcaption>
+</figure>
 
 On the other hand, if you take a look at `prepend()` on MDN, you'll see that is it apart of the DOM, meaning that it is a Web API. In this case, `prepend()` will not be transpiled by Babel.
 
-<img src="./prepend_dom_spec.png" />
-<p class="caption">prepend() is apart of the DOM spec, therefore it is a web API, and will NOT be transpiled by Babel.</p>
+<figure>
+    <img src="./prepend_dom_spec.png" />
+    <figcaption>prepend() is apart of the DOM spec, therefore it is a web API, and will NOT be transpiled by Babel.</figcaption>
+</figure>
 
 Thankfully, MDN provides polyfills for these methods on the same page as the spec under the "Polyfill" section. It is as simple as including the polyfill in your code, and the browser will determine if it is needed or not.

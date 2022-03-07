@@ -9,5 +9,7 @@ It's pretty simple and to the point. Just enter your business address/desired lo
 
 Check out [the release on Product Hunt](https://www.producthunt.com/posts/google-maps-directions-link-generator), or [go directly to the site.](https://directionslinkgenerator.com)
 
-<img src="./directions-link-generator.png" alt="Directions Link Generator Home Page"/>
-<p class="caption">The home page of Directions Link Generator</p>
+<figure>
+    <img src="./directions-link-generator.png" alt="Directions Link Generator Home Page"/>
+    <figcaption>The home page of Directions Link Generator</figcaption>
+</figure>

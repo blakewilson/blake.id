@@ -7,9 +7,10 @@ I recently had the opportunity to build the new submission flow for [The Unsent 
 
 The Unsent Project is a collection of unsent text messages to first loves. Users can submit these messages on The Unsent Project website by filling out a name, the message, and selecting a color that you associate with your first love. Once submitted, it gets added to the Unsent Project Archive, a collection of over 40,000 submissions. [I recommend checking it out!](https://theunsentproject.com/archive)
 
-<span style="background-color: #000;"><img src="./blankunsent.png" /></span>
-
-<p class="caption">A blank Unsent Message</p>
+<figure>
+    <span style="background-color: #000;"><img src="./blankunsent.png" /></span>
+    <figcaption>A blank Unsent Message</figcaption>
+</figure>
 
 ### Technical Workflow Before Redesign
 

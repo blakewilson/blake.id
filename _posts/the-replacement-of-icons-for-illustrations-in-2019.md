@@ -11,8 +11,10 @@ I also find these illustrations more friendly and inviting opposed to the more "
 
 I decided to give a stab at making a few illustrations for [Push Labs, where I sell Video Background Pro.](https://pushlabs.co/video-background-pro)
 
-<img src="./video-background-pro-illustrations.png" />
-<p class="caption">Illustrations for Push Labs</p>
+<figure>
+    <img src="./video-background-pro-illustrations.png" />
+    <figcaption>Illustrations for Push Labs</figcaption>
+</figure>
 
 These icons are meant to convey some of the perks of the plugin, like mobile autoplaying video backgrounds, Vimeo & YouTube video backgrounds, and dedicated support. I think they turned out alright for not being a designer.
 
