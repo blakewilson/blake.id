@@ -27,7 +27,7 @@ export default function Header() {
               Contact
             </a>
           </li>
-          <span className="hidden sm:block mr-6 border-l border-black dark:border-white h-6" />
+          <span className="hidden sm:block mr-6 border-l-2 border-gray-200 border-gray-800 h-6" />
           <li className="mr-6">
             <a target="_blank" href="https://www.npmjs.com/~blakewilson">
               <span className="sm:sr-only text-lg text-black dark:text-white">

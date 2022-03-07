@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
 
       <div className="container max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row items-start md:items-center">
           <div className="w-full md:w-1/2 p-4">
             <Image
               className="rounded-lg"
@@ -27,12 +27,12 @@ export default function Home() {
             </p>
 
             <p>
-              Focused on TypeScript, React, GraphQL, Next.js, and WordPress.
-              Currently, I'm working at WP Engine building{" "}
+              My focus is on TypeScript, React, GraphQL, Next.js, and WordPress.
+              Currently, I'm working at WP Engine making{" "}
               <a href="https://github.com/wpengine/faustjs">
                 Headless WordPress
               </a>{" "}
-              solutions.
+              more accessible.
             </p>
 
             <p>
@@ -42,7 +42,7 @@ export default function Home() {
               <Link href="/posts">
                 <a>write about it.</a>
               </Link>{" "}
-              Here are some of my favorites:
+              Here are some of my favorite posts:
             </p>
 
             <ul>
