@@ -3,6 +3,7 @@ import Head from "next/head";
 import FormatDate from "../components/format-date";
 import Header from "../components/header";
 import PostContent from "../components/postContent";
+import SEO from "../components/seo";
 import { getAllPosts, getPostBySlug } from "../lib/api";
 import markdownToHtml from "../lib/markdownToHtml";
 
@@ -19,9 +20,6 @@ export type PostType = {
   coverImage: string;
   author: Author;
   excerpt: string;
-  ogImage: {
-    url: string;
-  };
   content: string;
 };
 
@@ -34,10 +32,11 @@ export default function Post({ post, morePosts }: Props) {
   return (
     <>
       <Head>
-        <title>
-          {post.title} | Blake Wilson - Software Engineer and Creator
-        </title>
-        <meta name="description" content={post.content} />
+        <SEO
+          title={`${post.title} | Blake Wilson - Software Engineer and Creator`}
+          description={post.content}
+          imageUrl={post?.coverImage}
+        />
       </Head>
       <Header />
 

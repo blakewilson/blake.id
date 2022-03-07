@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import FormatDate from "../components/format-date";
 import Header from "../components/header";
+import SEO from "../components/seo";
 import { getAllPosts } from "../lib/api";
 import { PostType } from "./[slug]";
 
@@ -9,7 +10,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
   return (
     <>
       <Head>
-        <title>Posts | Blake Wilson - Software Engineer and Creator</title>
+        <SEO title="Blake Wilson - Software Engineer and Creator" />
       </Head>
       <Header />
 

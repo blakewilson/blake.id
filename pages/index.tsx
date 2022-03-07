@@ -2,16 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/header";
+import SEO from "../components/seo";
 import profilePic from "../public/profile-pic.png";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Blake Wilson - Software Engineer and Creator</title>
-        <meta
-          name="description"
-          content="Hey I'm Blake! I'm a software engineer and creator, building things for the web."
+        <SEO
+          title="Blake Wilson - Software Engineer and Creator"
+          description="Hey I'm Blake! I'm a software engineer and creator, building things for the web."
         />
       </Head>
       <Header />
