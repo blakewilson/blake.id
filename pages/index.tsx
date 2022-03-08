@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className="container max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center">
-          <div className="w-full md:w-1/2 p-4">
+          <div className="relative w-full md:w-1/2 p-4">
             <Image
               src={profilePic}
               alt="My puppy and I"
@@ -26,6 +26,9 @@ export default function Home() {
               layout="responsive"
               className="rounded-lg"
             />
+            <div className="relative md:absolute text-lg my-2">
+              📍 Based in Austin, TX
+            </div>
           </div>
           <div className="w-full md:w-1/2 p-4 prose prose-lg md:prose-2xl dark:prose-invert">
             <h2>Hi, I'm Blake.</h2>

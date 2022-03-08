@@ -13,7 +13,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
       <Header />
 
       <div className="container max-w-6xl mx-auto p-4">
-        <div className="prose prose-lg md:prose-2xl dark:prose-invert p-0 m-0 w-full max-w-full">
+        <div className="prose prose-lg md:prose-2xl dark:prose-invert mx-auto">
           <h2>All Posts</h2>
           {allPosts.map((post) => (
             <article className="mb-4" key={post.slug}>
