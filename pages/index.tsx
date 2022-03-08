@@ -60,14 +60,14 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/v2-of-vidbg-is-now-released/">
-                  Version 2 of vidbg.js Has Been Released
-                </Link>
-              </li>
-              <li>
                 <Link href="/react-global-state-in-5-minutes-with-hooks-usecontext-usereducer/">
                   React Global State in 5 Minutes with Hooks (useContext,
                   useReducer)
+                </Link>
+              </li>
+              <li>
+                <Link href="/v2-of-vidbg-is-now-released/">
+                  Version 2 of vidbg.js Has Been Released
                 </Link>
               </li>
             </ul>
