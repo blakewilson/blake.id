@@ -19,6 +19,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 p-4">
             <Image
               src={profilePic}
+              alt="My puppy and I"
               width={2607}
               height={3463}
               placeholder="blur"
