@@ -40,7 +40,7 @@ export default function Home() {
 
             <p>
               My focus is on TypeScript, React, GraphQL, Next.js, and WordPress.
-              Currently, I'm working at WP Engine making{" "}
+              I'm currently working at WP Engine, making{" "}
               <a href="https://github.com/wpengine/faustjs">
                 Headless WordPress
               </a>{" "}
