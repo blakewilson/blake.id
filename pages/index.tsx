@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/header";
 import SEO from "../components/seo";
-import profilePic from "../public/profile-pic.png";
+import profilePic from "../public/profile-pic.jpeg";
 
 export default function Home() {
   return (
@@ -40,11 +40,9 @@ export default function Home() {
 
             <p>
               My focus is on TypeScript, React, GraphQL, Next.js, and WordPress.
-              I'm currently working at WP Engine, making{" "}
-              <a href="https://github.com/wpengine/faustjs">
-                Headless WordPress
-              </a>{" "}
-              more accessible.
+              I'm currently working at WP Engine, building a{" "}
+              <a href="#">frontend JavaScript framework</a> for Headless
+              WordPress.
             </p>
 
             <p>

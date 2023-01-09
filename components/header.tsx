@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BsGithub } from "react-icons/bs/";
+import { BsGithub, BsYoutube } from "react-icons/bs/";
 import { FaNpm } from "react-icons/fa";
 
 export default function Header() {
@@ -28,6 +28,28 @@ export default function Header() {
             </a>
           </li>
           <span className="hidden sm:block mr-6 border-l-2 border-gray-200 dark:border-gray-800 h-6" />
+          <li className="mr-6">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCW7i6yNJPDDsZRsxVxVYlQQ"
+            >
+              <span className="sm:sr-only text-lg text-black dark:text-white">
+                YouTube
+              </span>
+              <BsYoutube className="hidden sm:block text-3xl" />
+            </a>
+          </li>
+          <li className="mr-6">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCW7i6yNJPDDsZRsxVxVYlQQ"
+            >
+              <span className="sm:sr-only text-lg text-black dark:text-white">
+                YouTube
+              </span>
+              < className="hidden sm:block text-3xl" />
+            </a>
+          </li>
           <li className="mr-6">
             <a target="_blank" href="https://www.npmjs.com/~blakewilson">
               <span className="sm:sr-only text-lg text-black dark:text-white">
