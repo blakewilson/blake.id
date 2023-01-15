@@ -18,7 +18,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
           {allPosts.map((post) => (
             <article className="mb-4" key={post.slug}>
               <Link href="/[slug]" as={`/${post.slug}`}>
-                <a>{post.title}</a>
+                {post.title}
               </Link>
               <div>
                 <FormatDate date={post.date} />

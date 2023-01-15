@@ -1,9 +1,5 @@
-import Head from "next/head";
-import Link from "next/link";
-import FormatDate from "../components/format-date";
 import Header from "../components/header";
 import SEO from "../components/seo";
-import { getAllPosts } from "../lib/api";
 import { PostType } from "./[slug]";
 import Image from "next/image";
 
@@ -17,6 +13,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
         <div className="prose prose-lg md:prose-2xl dark:prose-invert mx-auto">
           <Image
             className="rounded-xl shadow-xl"
+            alt="My Desk Setup"
             src="/desk.jpeg"
             width="4032"
             height="3024"

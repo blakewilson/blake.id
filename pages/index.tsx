@@ -19,12 +19,11 @@ export default function Home() {
           <div className="relative w-full md:w-1/2 p-4">
             <Image
               src={profilePic}
-              alt="My puppy and I"
-              width={2607}
-              height={3463}
+              alt="A picture of me sitting at a rooftop bar"
+              width={2079}
+              height={2910}
               placeholder="blur"
-              layout="responsive"
-              className="rounded-lg"
+              className="shadow-lg rounded-lg"
             />
             <div className="relative md:absolute text-lg my-2">
               📍 Based in Austin, TX
@@ -48,11 +47,8 @@ export default function Home() {
             <p>
               I make{" "}
               <a href="https://github.com/blakewilson">open source software</a>,
-              and{" "}
-              <Link href="/posts">
-                <a>write about it.</a>
-              </Link>{" "}
-              Here are some of my favorite posts:
+              and <Link href="/posts">write about it.</Link> Here are some of my
+              favorite posts:
             </p>
 
             <ul>
