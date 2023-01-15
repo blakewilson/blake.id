@@ -17,7 +17,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
             src="/desk.jpeg"
             width="4032"
             height="3024"
-            layout="responsive"
+            placeholder="blur"
           />
           <h2>What I Use</h2>
 
