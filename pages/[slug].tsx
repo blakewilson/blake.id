@@ -1,4 +1,4 @@
-import { Params } from "next/dist/server/router";
+import { GetStaticPropsContext } from "next";
 import Head from "next/head";
 import FormatDate from "../components/format-date";
 import Header from "../components/header";
@@ -62,8 +62,12 @@ export default function Post({ post, morePosts }: Props) {
   );
 }
 
-export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
+export async function getStaticProps({ params }: GetStaticPropsContext) {
+  if (!params) {
+    throw new Error("Params is not defined");
+  }
+
+  const post = getPostBySlug(params.slug as string, [
     "title",
     "date",
     "slug",
