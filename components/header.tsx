@@ -1,22 +1,20 @@
 import Link from "next/link";
-import { BsGithub } from "react-icons/bs/";
-import { FaNpm } from "react-icons/fa";
+import { BsGithub, BsYoutube } from "react-icons/bs/";
+import { FaNpm, FaTiktok } from "react-icons/fa";
 
 export default function Header() {
   return (
     <header className="mb-8">
       <div className="w-full max-w-6xl p-4 mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between">
-        <Link href="/">
-          <a className="mb-6 sm:mb-0">
-            <div className="text-3xl font-bold">Blake Wilson</div>
-            <div className="text-md">Software Engineer</div>
-          </a>
+        <Link className="mb-6 sm:mb-0" href="/">
+          <div className="text-3xl font-bold">Blake Wilson</div>
+          <div className="text-md">Software Engineer</div>
         </Link>
 
         <ul className="flex items-center">
           <li className="mr-6">
-            <Link href="/posts">
-              <a className="text-lg text-black dark:text-white">Posts</a>
+            <Link className="text-lg text-black dark:text-white" href="/posts">
+              Posts
             </Link>
           </li>
           <li className="mr-6">
