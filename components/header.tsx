@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BsGithub, BsYoutube } from "react-icons/bs/";
+import { BsGithub, BsTiktok, BsTwitterX, BsX, BsYoutube } from "react-icons/bs";
 import { FaNpm, FaTiktok } from "react-icons/fa";
 
 export default function Header() {
@@ -11,10 +11,23 @@ export default function Header() {
           <div className="text-md">Software Engineer</div>
         </Link>
 
-        <ul className="flex items-center">
+        <ul className="w-full md:w-auto overflow-x-auto md:overflow-x-visible flex items-center">
           <li className="mr-6">
             <Link className="text-lg text-black dark:text-white" href="/posts">
               Posts
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link
+              className="text-lg text-black dark:text-white"
+              href="/projects"
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link className="text-lg text-black dark:text-white" href="/uses">
+              Uses
             </Link>
           </li>
           <li className="mr-6">
@@ -34,12 +47,20 @@ export default function Header() {
               <FaNpm className="hidden sm:block text-3xl" />
             </a>
           </li>
-          <li>
+          <li className="mr-6">
             <a target="_blank" href="https://github.com/blakewilson">
               <span className="sm:sr-only text-lg text-black dark:text-white">
                 GitHub
               </span>
               <BsGithub className="hidden sm:block text-3xl" />
+            </a>
+          </li>
+          <li className="mr-6">
+            <a target="_blank" href="https://twitter.com/sundaycode">
+              <span className="sm:sr-only text-lg text-black dark:text-white">
+                Twitter
+              </span>
+              <BsTwitterX className="hidden sm:block text-3xl" />
             </a>
           </li>
         </ul>

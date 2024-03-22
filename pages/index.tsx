@@ -14,7 +14,7 @@ export default function Home() {
       />
       <Header />
 
-      <div className="container max-w-6xl mx-auto">
+      <div className="container max-w-6xl mx-auto pb-12">
         <div className="flex flex-col md:flex-row items-start md:items-center">
           <div className="relative w-full md:w-1/2 p-4">
             <Image
