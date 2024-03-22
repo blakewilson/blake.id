@@ -11,7 +11,7 @@ export default function Header() {
           <div className="text-md">Software Engineer</div>
         </Link>
 
-        <ul className="flex items-center">
+        <ul className="w-full md:w-auto overflow-x-auto md:overflow-x-visible flex items-center">
           <li className="mr-6">
             <Link className="text-lg text-black dark:text-white" href="/posts">
               Posts
@@ -23,6 +23,11 @@ export default function Header() {
               href="/projects"
             >
               Projects
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link className="text-lg text-black dark:text-white" href="/uses">
+              Uses
             </Link>
           </li>
           <li className="mr-6">
