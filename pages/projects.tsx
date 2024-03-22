@@ -10,7 +10,15 @@ export default function Projects() {
 
       <div className="container max-w-2xl mx-auto p-4">
         <div className="mx-auto">
-          <h2>Projects</h2>
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              Projects
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              Some of the projects I've been proud to work on throughout my
+              career. In no particular order.
+            </p>
+          </div>
 
           <ProjectCard
             imageUrl="/projects/insight-analytics.png"
@@ -21,7 +29,7 @@ export default function Projects() {
 
           <ProjectCard
             imageUrl="/projects/faustjs.png"
-            projectUrl="https://theunsentproject.com"
+            projectUrl="https://github.com/wpengine/faustjs"
             title="Faust.js"
             description="While at WP Engine, I had the opportunity to help build and lead the development of the Faust.js Headless WordPress framework. Built on top of Next.js, the framework provides helpful features for interacting with a headless WordPress site like support for previews, authentication, sitemaps, template hierarchy system, and more."
           />
