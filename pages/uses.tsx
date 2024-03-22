@@ -2,6 +2,7 @@ import Header from "../components/header";
 import SEO from "../components/seo";
 import { PostType } from "./[slug]";
 import Image from "next/image";
+import DeskImage from "../public/desk.jpeg";
 
 export default function Home({ allPosts }: { allPosts: PostType[] }) {
   return (
@@ -14,7 +15,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
           <Image
             className="rounded-xl shadow-xl"
             alt="My Desk Setup"
-            src="/desk.jpeg"
+            src={DeskImage}
             width="4032"
             height="3024"
             placeholder="blur"
@@ -24,7 +25,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
           <h3>Hardware</h3>
 
           <ul>
-            <li>Apple MacBook Pro 16" (2019)</li>
+            <li>Apple MacBook Pro 14" M3 Pro</li>
             <li>Apple Studio Display</li>
             <li>Keychron K2 Keyboard</li>
             <li>Logitech MS Master 2S Mouse</li>
@@ -38,26 +39,24 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
             <li>Blue Microphone Boom Arm</li>
             <li>Autonomous Sit/Stand Desk Legs</li>
             <li>Ikea IDÅSEN Tabletop</li>
-            <li>Hydroflask</li>
           </ul>
 
           <h3>Software</h3>
 
           <ul>
             <li>VS Code (Theme: Night Owl)</li>
+            <li>Neovim (btw)</li>
             <li>MonoLisa Font</li>
             <li>Final Cut Pro</li>
             <li>OBS</li>
-            <li>Firefox</li>
-            <li>Notion</li>
+            <li>Safari</li>
+            <li>Obsidian</li>
             <li>Spotify</li>
             <li>iTerm2</li>
             <li>Rectangle</li>
             <li>1Password</li>
             <li>Slack</li>
             <li>Zoom</li>
-            <li>Postman</li>
-            <li>GitHub Desktop</li>
             <li>Docker</li>
           </ul>
         </div>
