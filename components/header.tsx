@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BsGithub, BsYoutube } from "react-icons/bs/";
+import { BsGithub, BsYoutube } from "react-icons/bs";
 import { FaNpm, FaTiktok } from "react-icons/fa";
 
 export default function Header() {
@@ -15,6 +15,14 @@ export default function Header() {
           <li className="mr-6">
             <Link className="text-lg text-black dark:text-white" href="/posts">
               Posts
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link
+              className="text-lg text-black dark:text-white"
+              href="/projects"
+            >
+              Projects
             </Link>
           </li>
           <li className="mr-6">
