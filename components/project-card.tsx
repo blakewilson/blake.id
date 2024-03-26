@@ -1,21 +1,23 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Image, { StaticImageData } from 'next/image'
 
 export type ProjectCardProps = {
-  imageUrl: string;
+  imageSrc: StaticImageData;
   title: string;
   description: string;
   projectUrl: string;
 };
 export function ProjectCard(props: ProjectCardProps) {
-  const { imageUrl, title, description, projectUrl } = props;
+  const { imageSrc, title, description, projectUrl } = props;
 
   return (
     <article className="mb-16">
       <div className="mb-4">
-        <a href={projectUrl} target="_blank">
-          <img
-            src={imageUrl}
+        <a href={projectUrl} target="_blank" className="block">
+          <Image
+            src={imageSrc}
             alt={title}
+            placeholder="blur"
             className="aspect-[16/9] w-full rounded-2xl bg-gray-100"
           />
         </a>
