@@ -11,10 +11,10 @@ export default function Projects() {
       <div className="container max-w-2xl mx-auto p-4">
         <div className="mx-auto">
           <div className="mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
               Projects
             </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-600">
+            <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-slate-300">
               Some of the projects I've been proud to work on throughout my
               career. In no particular order.
             </p>
