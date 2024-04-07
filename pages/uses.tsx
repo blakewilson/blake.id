@@ -27,7 +27,7 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
           <ul>
             <li>Apple MacBook Pro 14" M3 Pro</li>
             <li>Apple Studio Display</li>
-            <li>Keychron K2 Keyboard</li>
+            <li>Kinesis Advantage360 Pro Keyboard</li>
             <li>Logitech MS Master 2S Mouse</li>
             <li>Grovemade Desk Pad</li>
             <li>Logitech C922 Webcam</li>
