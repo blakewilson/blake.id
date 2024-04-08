@@ -1,17 +1,15 @@
-
 import Header from "../../components/header";
 import { ProjectCard } from "../../components/project-card";
-import SEO from "../../components/seo";
-import InsightAnalyticsImage from '../../public/projects/insight-analytics.png';
-import FaustjsImage from '../../public/projects/faustjs.png'
-import UnsentProjectImage from '../../public/projects/the-unsent-project.png'
-import VideoBackgroundProImage from '../../public/projects/video-background-pro.png'
-import VideoBackgroundImage from '../../public/projects/video-background.png'
-import DirectionsLinkGeneratorImage from '../../public/projects/directions-link-generator.png'
+import DirectionsLinkGeneratorImage from "../../public/projects/directions-link-generator.png";
+import FaustjsImage from "../../public/projects/faustjs.png";
+import InsightAnalyticsImage from "../../public/projects/insight-analytics.png";
+import UnsentProjectImage from "../../public/projects/the-unsent-project.png";
+import VideoBackgroundProImage from "../../public/projects/video-background-pro.png";
+import VideoBackgroundImage from "../../public/projects/video-background.png";
 
 export const metadata = {
   title: "Projects | Blake Wilson - Software Engineer and Creator",
-}
+};
 
 export default async function Projects() {
   return (

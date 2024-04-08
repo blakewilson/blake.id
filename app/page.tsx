@@ -1,16 +1,13 @@
-
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/header";
-import SEO from "../components/seo";
 import profilePic from "../public/profile-pic.jpeg";
 
 export const metadata = {
   title: "Blake Wilson - Software Engineer and Creator",
-  descrition: "Hey I'm Blake! I'm a software engineer and creator, building things for the web."
-}
-
+  description:
+    "Hey I'm Blake! I'm a software engineer and creator, building things for the web.",
+};
 
 export default async function Home() {
   return (

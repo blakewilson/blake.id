@@ -1,60 +1,39 @@
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { GetStaticPropsContext } from "next";
-import Head from "next/head";
+import { notFound } from "next/navigation";
 import FormatDate from "../../components/format-date";
 import Header from "../../components/header";
 import PostContent from "../../components/postContent";
-import SEO from "../../components/seo";
-import { getAllPosts, getPostBySlug } from "../../lib/api";
+import { getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
-import dynamic from "next/dynamic";
-import {notFound} from 'next/navigation'
-
-export type Author = {
-name: string;
-picture: string;
-};
-
-export type PostType = {
-slug: string;
-title: string;
-date: string;
-updated: string;
-coverImage: string;
-author: Author;
-excerpt: string;
-content: string;
-};
 
 type Props = {
   params: {
     slug: string;
-  }
-}
+  };
+};
 
-export async function generateMetadata({params}: Props) {
-  const post = getPostBySlug(params.slug, [
-    "title"
-  ])
+export async function generateMetadata({ params }: Props) {
+  const post = getPostBySlug(params.slug, ["title"]);
 
   return {
-    title: `${post?.title ?? ''} | Blake Wilson - Software Engineer and Creator" `,
-  }
+    title: `${
+      post?.title ?? ""
+    } | Blake Wilson - Software Engineer and Creator" `,
+  };
 }
 
 export default async function Post({ params }: Props) {
   const post = getPostBySlug(params.slug, [
-      "title",
-      "date",
-      "slug",
-      "author",
-      "content",
-      "ogImage",
-      "coverImage",
+    "title",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "ogImage",
+    "coverImage",
   ]);
 
-  if(!post) {
-    return notFound()
+  if (!post) {
+    return notFound();
   }
 
   const content = await markdownToHtml(post.content || "");

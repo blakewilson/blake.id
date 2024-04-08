@@ -1,15 +1,12 @@
-
 import Header from "../../components/header";
-import SEO from "../../components/seo";
-import { PostType } from "./../../pages/[slug]";
 import Image from "next/image";
 import DeskImage from "../../public/desk.jpeg";
 
 export const metadata = {
   title: "Uses | Blake Wilson - Software Engineer and Creator",
-}
+};
 
-export default function Home({ allPosts }: { allPosts: PostType[] }) {
+export default function Home() {
   return (
     <>
       <Header />
