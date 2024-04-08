@@ -7,11 +7,16 @@ import SEO from "../../components/seo";
 import { getAllPosts } from "../../lib/api";
 import { PostType } from "./../../pages/[slug]";
 
+
+export const metadata = {
+  title: "All Posts | Blake Wilson - Software Engineer and Creator",
+}
+
 export default async function Home() {
   const allPosts = getAllPosts(["slug", "title", "date", "content"]);
+  
   return (
     <>
-      { /* <SEO title="All Posts | Blake Wilson - Software Engineer and Creator" /> */ }
       <Header />
 
       <div className="container max-w-6xl mx-auto p-4">

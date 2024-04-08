@@ -9,10 +9,13 @@ import VideoBackgroundProImage from '../../public/projects/video-background-pro.
 import VideoBackgroundImage from '../../public/projects/video-background.png'
 import DirectionsLinkGeneratorImage from '../../public/projects/directions-link-generator.png'
 
+export const metadata = {
+  title: "Projects | Blake Wilson - Software Engineer and Creator",
+}
+
 export default async function Projects() {
   return (
     <>
-      { /* <SEO title="Projects | Blake Wilson - Software Engineer and Creator" /> */ }
       <Header />
 
       <div className="container max-w-2xl mx-auto p-4">

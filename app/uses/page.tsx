@@ -5,10 +5,13 @@ import { PostType } from "./../../pages/[slug]";
 import Image from "next/image";
 import DeskImage from "../../public/desk.jpeg";
 
+export const metadata = {
+  title: "Uses | Blake Wilson - Software Engineer and Creator",
+}
+
 export default function Home({ allPosts }: { allPosts: PostType[] }) {
   return (
     <>
-      { /* <SEO title="Uses | Blake Wilson - Software Engineer and Creator" /> */ }
       <Header />
 
       <div className="container max-w-6xl mx-auto p-4">

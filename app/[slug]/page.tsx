@@ -1,5 +1,4 @@
-
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { MDXRemote } from "next-mdx-remote/rsc";
 import { GetStaticPropsContext } from "next";
 import Head from "next/head";
 import FormatDate from "../../components/format-date";
@@ -8,48 +7,60 @@ import PostContent from "../../components/postContent";
 import SEO from "../../components/seo";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
+import {notFound} from 'next/navigation'
 
 export type Author = {
-  name: string;
-  picture: string;
+name: string;
+picture: string;
 };
 
 export type PostType = {
-  slug: string;
-  title: string;
-  date: string;
-  updated: string;
-  coverImage: string;
-  author: Author;
-  excerpt: string;
-  content: string;
+slug: string;
+title: string;
+date: string;
+updated: string;
+coverImage: string;
+author: Author;
+excerpt: string;
+content: string;
 };
 
+type Props = {
+  params: {
+    slug: string;
+  }
+}
 
-export default async function Post({ params }: { params: string}) {
+export async function generateMetadata({params}: Props) {
   const post = getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
-    "author",
-    "content",
-    "ogImage",
-    "coverImage",
+    "title"
+  ])
+
+  return {
+    title: `${post?.title ?? ''} | Blake Wilson - Software Engineer and Creator" `,
+  }
+}
+
+export default async function Post({ params }: Props) {
+  const post = getPostBySlug(params.slug, [
+      "title",
+      "date",
+      "slug",
+      "author",
+      "content",
+      "ogImage",
+      "coverImage",
   ]);
+
+  if(!post) {
+    return notFound()
+  }
 
   const content = await markdownToHtml(post.content || "");
 
-
-
   return (
     <>
-      { /* 
-      <SEO
-        title={`${post.title} | Blake Wilson - Software Engineer and Creator`}
-        description={post.content}
-        imageUrl={post?.coverImage}
-      /> */}
       <Header />
 
       <main className="container max-w-6xl mx-auto p-4">
@@ -70,7 +81,7 @@ export default async function Post({ params }: { params: string}) {
             )}
           </div>
 
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+          <div dangerouslySetInnerHTML={{ __html: content }} />
         </PostContent>
       </main>
     </>
