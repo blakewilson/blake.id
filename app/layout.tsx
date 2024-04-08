@@ -4,11 +4,13 @@ import "highlight.js/styles/github-dark.css";
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-white dark:bg-black text-black dark:text-white">
+        {children}
+      </body>
     </html>
-  )
+  );
 }
