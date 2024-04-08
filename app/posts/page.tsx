@@ -1,15 +1,17 @@
+
 import Head from "next/head";
 import Link from "next/link";
-import FormatDate from "../components/format-date";
-import Header from "../components/header";
-import SEO from "../components/seo";
-import { getAllPosts } from "../lib/api";
-import { PostType } from "./[slug]";
+import FormatDate from "../../components/format-date";
+import Header from "../../components/header";
+import SEO from "../../components/seo";
+import { getAllPosts } from "../../lib/api";
+import { PostType } from "./../../pages/[slug]";
 
-export default function Home({ allPosts }: { allPosts: PostType[] }) {
+export default async function Home() {
+  const allPosts = getAllPosts(["slug", "title", "date", "content"]);
   return (
     <>
-      <SEO title="All Posts | Blake Wilson - Software Engineer and Creator" />
+      { /* <SEO title="All Posts | Blake Wilson - Software Engineer and Creator" /> */ }
       <Header />
 
       <div className="container max-w-6xl mx-auto p-4">
@@ -33,12 +35,3 @@ export default function Home({ allPosts }: { allPosts: PostType[] }) {
   );
 }
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts(["slug", "title", "date", "content"]);
-
-  return {
-    props: {
-      allPosts,
-    },
-  };
-}

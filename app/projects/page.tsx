@@ -1,17 +1,18 @@
-import Header from "../components/header";
-import { ProjectCard } from "../components/project-card";
-import SEO from "../components/seo";
-import InsightAnalyticsImage from '../public/projects/insight-analytics.png';
-import FaustjsImage from '../public/projects/faustjs.png'
-import UnsentProjectImage from '../public/projects/the-unsent-project.png'
-import VideoBackgroundProImage from '../public/projects/video-background-pro.png'
-import VideoBackgroundImage from '../public/projects/video-background.png'
-import DirectionsLinkGeneratorImage from '../public/projects/directions-link-generator.png'
 
-export default function Projects() {
+import Header from "../../components/header";
+import { ProjectCard } from "../../components/project-card";
+import SEO from "../../components/seo";
+import InsightAnalyticsImage from '../../public/projects/insight-analytics.png';
+import FaustjsImage from '../../public/projects/faustjs.png'
+import UnsentProjectImage from '../../public/projects/the-unsent-project.png'
+import VideoBackgroundProImage from '../../public/projects/video-background-pro.png'
+import VideoBackgroundImage from '../../public/projects/video-background.png'
+import DirectionsLinkGeneratorImage from '../../public/projects/directions-link-generator.png'
+
+export default async function Projects() {
   return (
     <>
-      <SEO title="Projects | Blake Wilson - Software Engineer and Creator" />
+      { /* <SEO title="Projects | Blake Wilson - Software Engineer and Creator" /> */ }
       <Header />
 
       <div className="container max-w-2xl mx-auto p-4">

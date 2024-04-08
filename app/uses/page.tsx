@@ -1,13 +1,14 @@
-import Header from "../components/header";
-import SEO from "../components/seo";
-import { PostType } from "./[slug]";
+
+import Header from "../../components/header";
+import SEO from "../../components/seo";
+import { PostType } from "./../../pages/[slug]";
 import Image from "next/image";
-import DeskImage from "../public/desk.jpeg";
+import DeskImage from "../../public/desk.jpeg";
 
 export default function Home({ allPosts }: { allPosts: PostType[] }) {
   return (
     <>
-      <SEO title="Uses | Blake Wilson - Software Engineer and Creator" />
+      { /* <SEO title="Uses | Blake Wilson - Software Engineer and Creator" /> */ }
       <Header />
 
       <div className="container max-w-6xl mx-auto p-4">
