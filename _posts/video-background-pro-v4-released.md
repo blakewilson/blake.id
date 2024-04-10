@@ -16,7 +16,7 @@ Yes, they are finally here. [Vimeo](https://vimeo.com) video backgrounds are now
 In Video Background Pro 3, we saw mobile video background playback. This was a huge step forward and was revolutionary, as it was one of, if not the first video background plugin to offer this functionality. With that, however, came a few restrictions. Video Backgrounds could only be played in Safari on IOS, and Chrome on Android. With Video Background Pro 4, any browser that supports the HTML5 `<video>` tag will play video backgrounds! This works for desktop browsers, tablet browsers, mobile browsers, etc. I even tried it on an android phone I haven't touched in years and it autoplayed. Exciting times!
 
 <figure>
-    <video width="320" loop controls autoplay muted playsinline src="./vidbgpro-mobile-vimeo.mp4"></video>
+    <video width="320" loop controls autoplay muted playsinline src="vidbgpro-mobile-vimeo.mp4"></video>
     <figcaption>Video Background Pro running a Vimeo video background on mobile</figcaption>
 </figure>
 

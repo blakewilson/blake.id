@@ -8,7 +8,7 @@ I recently had the opportunity to build the new submission flow for [The Unsent 
 The Unsent Project is a collection of unsent text messages to first loves. Users can submit these messages on The Unsent Project website by filling out a name, the message, and selecting a color that you associate with your first love. Once submitted, it gets added to the Unsent Project Archive, a collection of over 40,000 submissions. [I recommend checking it out!](https://theunsentproject.com/archive)
 
 <figure>
-    <span style="background-color: #000;"><img src="./blankunsent.png" /></span>
+    <span style="background-color: #000;"><img src="blankunsent.png" /></span>
     <figcaption>A blank Unsent Message</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ This let me enqueue the compiled JS and CSS into WordPress by using `wp_enqueue_
 I am very happy with the final product. It is very responsive to user input, and works on mobile, which was a downfall of the previous iteration. Additionally, her users seem to enjoy it as well!
 
 <video loop controls autoplay muted playsinline>
-    <source src="./final-project.mp4" type="video/mp4">
+    <source src="final-project.mp4" type="video/mp4">
 </video>
 
 Most importantly, the conversion rate has jumped drastically. Prior to the redesign, The Unsent Project would average 500 submissions a month. The monthly average amount of submissions post-redesign are now 2,000 submissions; a 4x increase! There have been over 7,000 submissions since the redesign, bringing total submissions to over 40,000!
