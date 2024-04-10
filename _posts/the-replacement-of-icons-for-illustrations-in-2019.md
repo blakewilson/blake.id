@@ -12,7 +12,7 @@ I also find these illustrations more friendly and inviting opposed to the more "
 I decided to give a stab at making a few illustrations for [Push Labs, where I sell Video Background Pro.](https://pushlabs.co/video-background-pro)
 
 <figure>
-    <img src="./video-background-pro-illustrations.png" />
+    <img src="video-background-pro-illustrations.png" />
     <figcaption>Illustrations for Push Labs</figcaption>
 </figure>
 

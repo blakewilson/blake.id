@@ -10,14 +10,14 @@ After looking into this further, I found that these methods in particular are wh
 For example, if you look up `map()` on MDN, you'll see under "specifications" that it is apart of ECMAScript, therefore it will be transpiled by Babel.
 
 <figure>
-    <img src="./map_ecma_spec.png" />
+    <img src="map_ecma_spec.png" />
     <figcaption>map() is apart of the ECMAScript spec, therefore it will be transpiled by Babel.</figcaption>
 </figure>
 
 On the other hand, if you take a look at `prepend()` on MDN, you'll see that is it apart of the DOM, meaning that it is a Web API. In this case, `prepend()` will not be transpiled by Babel.
 
 <figure>
-    <img src="./prepend_dom_spec.png" />
+    <img src="prepend_dom_spec.png" />
     <figcaption>prepend() is apart of the DOM spec, therefore it is a web API, and will NOT be transpiled by Babel.</figcaption>
 </figure>
 
