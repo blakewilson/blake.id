@@ -1,7 +1,7 @@
 ---
 title: "Air conditioning not working on the second story (damper motor failure)"
 date: "2023-04-15"
-categories: 
+categories:
   - "hvac"
 ---
 
@@ -11,7 +11,7 @@ I have a two story house with a 2-zone air conditioning system, one zone for dow
 
 After doing some research, these zones are controlled by something called a zone damper.
 
-![](images/51RRvIaXq1L.jpg)
+![](51RRvIaXq1L.jpg)
 
 You can see in the image above, the damper is a duct with a metal door that opens and closes, with a motor that sits on top to either open or close the damper.
 
@@ -39,7 +39,7 @@ So the upstairs zone damper was not properly opening when needed.
 
 **I turned off the power** and went up in the attic and found the zone damper motor. You can find the zone damper motor by looking for a rectangular box on top of the ductwork.
 
-![](images/IMG_3913-1024x768.jpeg)
+![](IMG_3913-1024x768.jpeg)
 
 I found that I had Honeywell M847D1004 damper motors. After doing some digging on Amazon, [I found a replacement by Valemo](https://www.amazon.com/gp/product/B0868C89Q7) for this model and bought two.
 
@@ -49,7 +49,7 @@ Replacing the motor is fairly straight forward. First you'll want to disconnect 
 
 Once that is done you'll want to loosen the set screw. This set screw is somewhere underneath the motor, mine happened to be at the bottom. This set screw was for an Alan wrench, which made it easy to get to. You do not need to completely remove the set screw, just unscrew it enough to where you can pull the motor straight out.
 
-![](images/IMG_3959-768x1024.jpeg)
+![](IMG_3959-768x1024.jpeg)
 
 As you can see on the motor on the right, the black screw is the set screw referenced above. Additionally, you'll notice the metal bar sticking out. This fits into the damper housing and acts as a fixed point to ensure the damper itself doesn't rotate. Then you have the actual center piece of the motor which rotates the damper door.
 
@@ -63,7 +63,7 @@ Once the damper door is in the correct starting position, fit the new damper mot
 
 Once the new motor is installed, reconnect the power and ground wires.
 
-![](images/IMG_3916-768x1024.jpeg)
+![](IMG_3916-768x1024.jpeg)
 
 Now you can turn your power back on and test the diagnosis steps above. Except now, when calling for A/C in the zone with the motor you just replaced, you should see the damper door properly open/close now.
 
@@ -73,17 +73,17 @@ Since I bought two motors off Amazon just in case and I was already up in the sw
 
 Unfortunately for me this motor wasn't as easy to get to. My attic is quite small with little to no walkways. I was practically a contortionist trying to get to this motor without putting any pressure on the attic floors.
 
-![](images/IMG_3925-1024x768.jpeg)
+![](IMG_3925-1024x768.jpeg)
 
 On top of that, I had to move around some insulation as well. I swept and relocated the insulation, make sure to wear a mask for this, and let it settle for an hour or two.
 
 I then got some 2x4s and placed them on the joists by the motor so I could support myself while replacing the motor.
 
-![](images/IMG_3933-1024x768.jpeg)
+![](IMG_3933-1024x768.jpeg)
 
 Then, repeated the steps above. Once I got the new motor in, I replaced the insulation and cleaned up the space.
 
-![](images/IMG_3957-768x1024.jpeg)
+![](IMG_3957-768x1024.jpeg)
 
 ## Lessons Learned
 
