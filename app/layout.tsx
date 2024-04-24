@@ -1,8 +1,6 @@
 import "../styles/globals.css";
 import "highlight.js/styles/github-dark.css";
 
-export const dynamic = "force-static";
-
 export default function RootLayout({
   children,
 }: {
