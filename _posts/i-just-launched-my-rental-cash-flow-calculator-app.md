@@ -12,26 +12,26 @@ You can [view the release on Product Hunt here](https://www.producthunt.com/post
 Here are a few images below:
 
 <figure>
-    <img src="rcf-1.png" />
+    <img src="/i-just-launched-my-rental-cash-flow-calculator-app/rcf-1.png" />
     <figcaption>The main page when no data has been entered</figcaption>
 </figure>
 
 <figure>
-    <img src="rcf-2.png" />
+    <img src="/i-just-launched-my-rental-cash-flow-calculator-app/rcf-2.png" />
     <figcaption>The main page once data has been entered about the property</figcaption>
 </figure>
 
 <figure>
-    <img src="rcf-3.png" />
+    <img src="/i-just-launched-my-rental-cash-flow-calculator-app/rcf-3.png" />
     <figcaption>The amortization for the property</figcaption>
 </figure>
 
 <figure>
-    <img src="rcf-4.png" />
+    <img src="/i-just-launched-my-rental-cash-flow-calculator-app/rcf-4.png" />
     <figcaption>A demonstration of the Progressive Web App on iPhone</figcaption>
 </figure>
 
 <figure>
-    <img src="rcf-5.png" />
+    <img src="/i-just-launched-my-rental-cash-flow-calculator-app/rcf-5.png" />
     <figcaption>Banner that was used for Product Hunt</figcaption>
 </figure>
