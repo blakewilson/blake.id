@@ -19,9 +19,7 @@ export default async function Home() {
           <h2>All Posts</h2>
           {allPosts.map((post) => (
             <article className="mb-4" key={post?.slug}>
-              <Link href="/[slug]" as={`/${post?.slug}`}>
-                {post?.title}
-              </Link>
+              <Link href={`/${post?.slug}/`}>{post?.title}</Link>
               <div>
                 <FormatDate date={post?.date ?? ""} />
               </div>
