@@ -26,6 +26,7 @@ export default async function Home() {
           <h2>All Posts</h2>
           {allPosts.map((post) => (
             <article className="mb-4" key={post?.slug}>
+              {/* Using <a> tags until this bug is addressed: https://github.com/vercel/next.js/issues/65009 */}
               <a href={`/${post?.slug}/`}>{post?.title}</a>
               <div>
                 <FormatDate date={post?.date ?? ""} />
