@@ -1,6 +1,7 @@
 ---
 title: "Replacing the O2 downstream sensor on my 01 Toyota Sequoia"
 date: "2023-06-13"
+workshop: true
 categories:
   - "automotive"
 ---

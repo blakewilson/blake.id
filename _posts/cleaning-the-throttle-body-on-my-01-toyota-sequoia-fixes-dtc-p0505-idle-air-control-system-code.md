@@ -1,6 +1,7 @@
 ---
 title: "Cleaning the throttle body on my 01 Toyota Sequoia (Fixes DTC P0505: Idle Air Control System code)"
 date: "2023-08-14"
+workshop: true
 categories:
   - "automotive"
 ---

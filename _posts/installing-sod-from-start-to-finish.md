@@ -1,6 +1,7 @@
 ---
 title: "Installing sod from start to finish"
 date: "2023-05-22"
+workshop: true
 categories:
   - "lawn-maintenance"
 ---

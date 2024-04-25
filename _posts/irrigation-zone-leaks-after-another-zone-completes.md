@@ -1,6 +1,7 @@
 ---
 title: "Irrigation zone leaks after another zone completes"
 date: "2023-05-31"
+workshop: true
 categories:
   - "lawn-maintenance"
 ---

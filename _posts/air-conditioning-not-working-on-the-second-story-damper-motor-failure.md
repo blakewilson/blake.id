@@ -1,6 +1,7 @@
 ---
 title: "Air conditioning not working on the second story (damper motor failure)"
 date: "2023-04-15"
+workshop: true
 categories:
   - "hvac"
 ---
