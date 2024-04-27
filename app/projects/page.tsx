@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Header from "../../components/header";
 import { ProjectCard } from "../../components/project-card";
 import DirectionsLinkGeneratorImage from "../../public/projects/directions-link-generator.png";
@@ -7,7 +8,7 @@ import UnsentProjectImage from "../../public/projects/the-unsent-project.png";
 import VideoBackgroundProImage from "../../public/projects/video-background-pro.png";
 import VideoBackgroundImage from "../../public/projects/video-background.png";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Projects | Blake Wilson - Software Engineer and Creator",
 };
 

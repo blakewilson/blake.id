@@ -1,8 +1,9 @@
+import { Metadata } from "next";
 import FormatDate from "../../components/format-date";
 import Header from "../../components/header";
 import { getAllPosts } from "../../lib/api";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Workshop | Blake Wilson - Software Engineer and Creator",
 };
 

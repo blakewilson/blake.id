@@ -1,8 +1,9 @@
 import Header from "../../components/header";
 import Image from "next/image";
 import DeskImage from "../../public/desk.jpeg";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Uses | Blake Wilson - Software Engineer and Creator",
 };
 

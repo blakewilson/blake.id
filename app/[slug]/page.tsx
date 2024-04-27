@@ -4,6 +4,7 @@ import Header from "../../components/header";
 import PostContent from "../../components/postContent";
 import { getPostBySlug, getPostSlugs } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
+import { Metadata } from "next";
 
 type Props = {
   params: {
@@ -11,7 +12,7 @@ type Props = {
   };
 };
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(params.slug, ["title"]);
 
   return {

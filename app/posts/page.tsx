@@ -1,9 +1,9 @@
-import Link from "next/link";
 import FormatDate from "../../components/format-date";
 import Header from "../../components/header";
 import { getAllPosts } from "../../lib/api";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "All Posts | Blake Wilson - Software Engineer and Creator",
 };
 

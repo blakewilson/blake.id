@@ -1,5 +1,12 @@
+import { Metadata } from "next";
 import "../styles/globals.css";
 import "highlight.js/styles/github-dark.css";
+
+export const metadata: Metadata = {
+  openGraph: {
+    images: "/opengraph-image.jpeg",
+  },
+};
 
 export default function RootLayout({
   children,
