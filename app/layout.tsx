@@ -4,9 +4,6 @@ import "highlight.js/styles/github-dark.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://blake.id"),
-  openGraph: {
-    images: "/opengraph-image.jpeg",
-  },
 };
 
 export default function RootLayout({
