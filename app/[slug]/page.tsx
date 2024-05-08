@@ -13,12 +13,13 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getPostBySlug(params.slug, ["title"]);
+  const post = getPostBySlug(params.slug, ["title", "description"]);
 
   return {
     title: `${
       post?.title ?? ""
-    } | Blake Wilson - Software Engineer and Creator" `,
+    } | Blake Wilson - Software Engineer and Creator`,
+    description: post?.description
   };
 }
 
