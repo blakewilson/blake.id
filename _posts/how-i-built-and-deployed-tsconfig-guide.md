@@ -1,6 +1,7 @@
 ---
 title: How I Built and Deployed TSConfig Guide
 date: "2024-04-30T15:00:00-0700"
+description: "I built TSConfig Guide over the past weekend. This post describes how I did it."
 ---
 
 Over the weekend, I built a Next.js app and deployed it to CloudFlare Pages. The idea behind this app is that creating `tsconfig.json` files for new TypeScript projects can be overwhelming. There is always new `compilerOptions`, best practices, and targets that you need to be aware of.
