@@ -138,7 +138,9 @@ This did lead to one problem I noticed with the site which I'll cover in the "tr
 
 The website itself is also [open source](https://github.com/blakewilson/tsconfig.guide) and available on GitHub. If you have any feature requests or ideas I would love to hear them in the [GitHub Issues!](https://github.com/blakewilson/tsconfig.guide/issues/new)
 
+<div class="flex flex-col items-center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just created <a href="https://t.co/xSpOBHQaCb">https://t.co/xSpOBHQaCb</a>, a tool to generate a TSConfig file for your new TypeScript project based on a few user inputs⚙️<br><br>It&#39;s inspired by <a href="https://twitter.com/mattpocockuk?ref_src=twsrc%5Etfw">@mattpocockuk</a>&#39;s TSConfig Cheat Sheet.<br><br>Check it out!</p>&mdash; Blake Wilson (@sundaycode) <a href="https://twitter.com/sundaycode/status/1784310656910442825?ref_src=twsrc%5Etfw">April 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 ## Troubleshooting
 
