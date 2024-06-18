@@ -3,10 +3,10 @@ import Header from "../../components/header";
 import { ProjectCard } from "../../components/project-card";
 import DirectionsLinkGeneratorImage from "../../public/projects/directions-link-generator.png";
 import FaustjsImage from "../../public/projects/faustjs.png";
-import InsightAnalyticsImage from "../../public/projects/insight-analytics.png";
 import UnsentProjectImage from "../../public/projects/the-unsent-project.png";
 import VideoBackgroundProImage from "../../public/projects/video-background-pro.png";
 import VideoBackgroundImage from "../../public/projects/video-background.png";
+import TSConfigGuideImage from "../../public/projects/tsconfig-guide.jpg"
 
 export const metadata: Metadata = {
   title: "Projects | Blake Wilson - Software Engineer and Creator",
@@ -30,10 +30,10 @@ export default async function Projects() {
           </div>
 
           <ProjectCard
-            imageSrc={InsightAnalyticsImage}
-            projectUrl="https://insightanalytics.app"
-            title="Insight Analytics"
-            description="Insight Analytics seamlessly integrates with leading bookkeeping software platforms such as QuickBooks and Sage, transforming raw data into powerful dashboards for informed decision-making."
+            imageSrc={TSConfigGuideImage}
+            projectUrl="https://tsconfig.guide"
+            title="TSConfig Guide"
+            description="A simple web app to generate TSConfig files for new TypeScript project based on a few toggles."
           />
 
           <ProjectCard
